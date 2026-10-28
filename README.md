@@ -1,24 +1,13 @@
-# README
+# RAILS 8 Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Software Version
+- Version 0.1
 
-Things you may want to cover:
+* Important Gem Versions
+- Ruby 4.0.9
+- Rails 8.1.4
 
-* Ruby version
-
-* System dependencies
+* Important Add-ons
 
 * Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Before starting the development of a new project, look for mentions of "rails8_template" in the project and change it accordingly to you new project to avoid conflicts in databases
