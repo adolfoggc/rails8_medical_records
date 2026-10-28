@@ -1,7 +1,9 @@
 # RAILS 8 Template
 
+A quick template for RoR 8 Projects with Tailwind
+
 ## Software Version
-- Version 0.3
+- Version 0.4
 
 ## Important Gem Versions
 - Ruby 4.0.9
@@ -10,6 +12,7 @@
 ## Important Add-ons
 - Devise Gem
 - RSpec
+- Tailwind
 
 ## Configuration
 Before starting the development of a new project, look for mentions of "rails8_template" in the project and change it accordingly to you new project to avoid conflicts in databases
@@ -23,4 +26,4 @@ rubocop
 ```
 
 ## Update in this version
-- Add rspec-rails gem
+- Add tailwind css
