@@ -54,7 +54,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   # Rspec Rails
-  gem 'rspec-rails', '~> 6.0.0'
+  gem "rspec-rails", "~> 6.0.0"
 end
 
 group :development do
@@ -62,7 +62,7 @@ group :development do
   gem "web-console"
 
   # bullet gem
-  gem 'bullet', group: 'development'
+  gem "bullet"
 end
 
 gem "devise", "~> 5.0"
