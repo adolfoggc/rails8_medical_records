@@ -13,6 +13,7 @@ A quick template for RoR 8 Projects with Tailwind and Rails Blocks
 - Devise Gem
 - RSpec
 - Tailwind
+- Bullet Gem
 
 ## Configuration
 Before starting the development of a new project, look for mentions of "rails8_template" in the project and change it accordingly to you new project to avoid conflicts in databases
@@ -28,3 +29,4 @@ rubocop
 ## Update in this version
 - Add tailwind css
 - Add Rails Blocks
+- Bullet gem
