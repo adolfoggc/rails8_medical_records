@@ -27,3 +27,4 @@ rubocop
 
 ## Update in this version
 - Add tailwind css
+- Add Rails Blocks
