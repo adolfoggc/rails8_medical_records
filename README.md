@@ -3,11 +3,12 @@
 A quick template for RoR 8 Projects with Tailwind and Rails Blocks
 
 ## Software Version
-- Version 0.4
+- Version 0.1
 
 ## Important Gem Versions
 - Ruby 4.0.9
 - Rails 8.1.4
+- Template 0.4
 
 ## Important Add-ons
 - Devise Gem
@@ -27,6 +28,4 @@ rubocop
 ```
 
 ## Update in this version
-- Add tailwind css
-- Add Rails Blocks
-- Bullet gem
+- Project Renaming
