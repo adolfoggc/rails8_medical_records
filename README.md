@@ -1,6 +1,6 @@
 # RAILS 8 Template
 
-A quick template for RoR 8 Projects with Tailwind
+A quick template for RoR 8 Projects with Tailwind and Rails Blocks
 
 ## Software Version
 - Version 0.4
