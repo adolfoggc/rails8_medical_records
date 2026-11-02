@@ -4,6 +4,7 @@ A quick template for RoR 8 Projects with Tailwind and Rails Blocks
 
 ## Software Version
 - Version 0.1
+- Template 0.4
 
 ## Important Gem Versions
 - Ruby 4.0.9
