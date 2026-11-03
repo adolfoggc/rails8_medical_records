@@ -1,7 +1,8 @@
 <div class="min-h-screen bg-red-800">
   <% accordion_items = [
     # New dropboxs means new dropbox with many links (topic_link)
-    { dropbox: "Dashboard", topic_link: [{name: 'Index', path: root_path}]}
+    { dropbox: "Dashboard", topic_link: [{name: 'Index', path: root_path}]},
+    { dropbox: "Patients", topic_link: [{name: 'Index', path: patients_path}]}
   ] %>
 
   <div class="w-full"  data-controller="accordion">
