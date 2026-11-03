@@ -6,7 +6,7 @@ A quick template for RoR 8 Projects with Tailwind and Rails Blocks
   Use ```bin/dev``` boot up the server with support to Tailwind
 
 ## Software Version
-- Version 0.1
+- Version 0.2
 - Template 0.5
 
 ## Important Gem Versions
@@ -14,12 +14,11 @@ A quick template for RoR 8 Projects with Tailwind and Rails Blocks
 - Rails 8.1.4
 
 ## Updates in this version
-- Dashboards controller
-- Dashboard template
-- Fix Accordion
+- Fix config message
+- Update Template colors
 
 ## Configuration
-Before starting the development of a new project, look for mentions of "rails8_template" in the project and change it accordingly to you new project to avoid conflicts in databases
+Run bin/dev to start the server
 
 ## Tools
 ### Linting
