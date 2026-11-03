@@ -27,7 +27,3 @@ Rails 8 already uses Rubocop. So you can check the linting using
 ```
 rubocop
 ```
-
-## Update in this version
-- Project Renaming
-- Template Update
