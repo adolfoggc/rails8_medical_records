@@ -1,13 +1,38 @@
 <% content_for :title, "Showing patient" %>
 
-<div class="md:w-2/3 w-full">
+<div class="w-full">
   <% if notice.present? %>
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-md inline-block" id="notice"><%= notice %></p>
   <% end %>
 
-  <h1 class="font-bold text-4xl">Showing patient</h1>
+  <h1 class="font-bold text-4xl mb-3">Showing patient</h1>
 
-  <%= render @patient %>
+  <div class="min-w-full flex items-center">
+    <div class="font-medium pr-1">Name:</div>
+    <div class="font-medium bg-lime-100 p-2 rounded-xl border-gray-300 border-1 grow ml-1">
+      <%= @patient.name %>
+    </div>
+  </div>
+  <div>
+    <div class="block font-medium mb-1">Email:</div>
+    <%= 
+      # TODO decide about show or not the email
+      @patient.email 
+    %>
+  </div>
+  <div class="min-w-full flex items-center">
+    <div class="font-medium pr-1">Age:</div>
+    <div class="font-medium bg-lime-100 p-2 rounded-xl border-gray-300 border-1 grow ml-1">
+      <%= @patient_age %>
+    </div>
+    <div class="font-medium pr-1 ml-1">Birthdate:</div>
+    <div class="font-medium bg-lime-100 p-2 rounded-xl border-gray-300 border-1 ml-1">
+      <%= 
+        @patient.birthday # TODO improve the date format
+      %>
+    </div>
+  </div>
+  <br>
 
   <%= link_to "Edit this patient", edit_patient_path(@patient), class: "w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
   <%= link_to "Back to patients", patients_path, class: "w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
