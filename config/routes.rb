@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reference_values
   resources :exams
   resources :patients
   get "dashboards/index"
