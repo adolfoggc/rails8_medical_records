@@ -1,19 +1,19 @@
 class Patient < ApplicationRecord
-  require 'date'
+  require "date"
 
-  # TODO refactor this method 
+  # TODO refactor this method
   def age
     today = Date.today
     this_year_birthday = Date.new(today.year, birthday.month, birthday.day)
     if this_year_birthday == today
-      return {days: 0, months: 0, years: (today.year - birthday.year)} 
+      return { days: 0, months: 0, years: (today.year - birthday.year) }
     else
-      if (this_year_birthday < today)
+      if this_year_birthday < today
         if today.day > birthday.day
           # already passed this month
           last_complete_month = Date.new(today.year, today.month, birthday.day)
         else
-          last_complete_month = Date.new(today.year, today.month - 1, birthday.day) 
+          last_complete_month = Date.new(today.year, today.month - 1, birthday.day)
         end
         days = (today - last_complete_month).to_i
         months = last_complete_month.month - birthday.month
@@ -31,8 +31,7 @@ class Patient < ApplicationRecord
       end
     end
 
-
-    return {days: days, months: months, years: years}
+    { days: days, months: months, years: years }
   end
 
   # TODO rename birthday column to birthdate

@@ -23,7 +23,6 @@ RSpec.describe "reference_ranges/edit", type: :view do
     render
 
     assert_select "form[action=?][method=?]", reference_range_path(reference_range), "post" do
-
       assert_select "input[name=?]", "reference_range[gender_related]"
 
       assert_select "input[name=?]", "reference_range[measure_unit]"

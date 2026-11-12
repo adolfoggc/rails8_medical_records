@@ -12,7 +12,6 @@ RSpec.describe "patients/new", type: :view do
     render
 
     assert_select "form[action=?][method=?]", patients_path, "post" do
-
       assert_select "input[name=?]", "patient[name]"
 
       assert_select "input[name=?]", "patient[email]"

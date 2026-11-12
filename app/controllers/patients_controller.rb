@@ -9,14 +9,14 @@ class PatientsController < ApplicationController
 
   # GET /patients/1 or /patients/1.json
   def show
-    @patient_age = '123'
+    @patient_age = "123"
     current_patient_age = @patient.age
     @patient_age = ""
     @patient_age += "#{current_patient_age[:years]} years" if current_patient_age[:years] > 0
-    @patient_age += ", " if (current_patient_age[:months] > 0 || current_patient_age[:days] > 0) 
+    @patient_age += ", " if current_patient_age[:months] > 0 || current_patient_age[:days] > 0
     @patient_age += "#{current_patient_age[:months]} months" if current_patient_age[:months] > 0
     @patient_age += " and " if current_patient_age[:days] > 0 && (current_patient_age[:months] > 0 || current_patient_age[:years] > 0)
-    @patient_age += "#{current_patient_age[:days]} days" if current_patient_age[:days] > 0 
+    @patient_age += "#{current_patient_age[:days]} days" if current_patient_age[:days] > 0
   end
 
   # GET /patients/new
