@@ -1,0 +1,2 @@
+class MedicalTest < ApplicationRecord
+end
