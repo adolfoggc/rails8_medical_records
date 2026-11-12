@@ -7,6 +7,6 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-{ "Troponin I - Ultrasensitive", "TSH", "Insulin", "Hydroxyvitamin D", "NT - ProBNP" }.each do |e|
+[ "Troponin I - Ultrasensitive", "TSH", "Insulin", "Hydroxyvitamin D", "NT - ProBNP" ].each do |e|
   MedicalTest.find_or_create_by(name: e)
 end
