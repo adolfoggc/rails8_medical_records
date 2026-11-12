@@ -1,0 +1,62 @@
+<%= form_with(model: reference_range, class: "contents") do |form| %>
+  <% if reference_range.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-md mt-3">
+      <h2><%= pluralize(reference_range.errors.count, "error") %> prohibited this reference_range from being saved:</h2>
+
+      <ul class="list-disc ml-6">
+        <% reference_range.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :gender_related %>
+    <%= form.number_field :gender_related, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:gender_related].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:gender_related].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :measure_unit %>
+    <%= form.number_field :measure_unit, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:measure_unit].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:measure_unit].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :reference %>
+    <%= form.text_field :reference, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:reference].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:reference].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :medical_test_id %>
+    <%= form.text_field :medical_test_id, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:medical_test_id].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:medical_test_id].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :min_age %>
+    <%= form.number_field :min_age, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:min_age].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:min_age].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :min_age_kind %>
+    <%= form.number_field :min_age_kind, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:min_age_kind].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:min_age_kind].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :max_age %>
+    <%= form.number_field :max_age, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:max_age].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:max_age].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :max_age_kind %>
+    <%= form.number_field :max_age_kind, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:max_age_kind].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:max_age_kind].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :risk_category %>
+    <%= form.number_field :risk_category, class: ["block shadow-sm rounded-md border px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": reference_range.errors[:risk_category].none?, "border-red-400 focus:outline-red-600": reference_range.errors[:risk_category].any?}] %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "w-full sm:w-auto rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
